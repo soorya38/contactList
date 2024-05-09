@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Add Contact</title>
+        <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+        <style>
+            body{
+                background-color: rgb(0, 0, 0);
+                color: white;
+            }
+            .container{
+                margin-left: 35%;
+                margin-top: 55px;
+                width: 400px;
+                color: white;
+                background-color: black;
+                border: 2px solid white;
+                border-radius: 20px;    
+            }
+            .new{
+                margin-left: 130px;
+                padding-top: 20px;
+            }
+            .image{
+                height: 150px;
+                width: 150px;
+                margin-top: 10px;
+                margin-left: 120px;
+                border-radius: 50%;
+                border:3px solid white;
+            }
+            .upload{
+                background-color:transparent;
+                color: rgb(71, 226, 226);
+                padding-top: 20px;
+                margin-left: 145px;
+                border: none;
+                font-size: 20px;
+                font-weight: bold;
+            }
+            input[type=text]{
+                margin-left: 50px;
+                width: 300px;
+                border-radius: 20px;
+                height: 30px;
+                font-display:inherit;
+                
+            }
+            ::placeholder{
+                top:-10px
+            }
+            .done{
+                margin-left:240px;
+                margin-top: 20px;
+                position: absolute;
+                color: rgb(71, 226, 226);
+                border: none;
+                background-color: transparent;
+                font-size:large;
+            
+            }
+            .cancel{
+                margin-left: 20px;
+                margin-top: 25px;
+                color:rgb(71, 226, 226);
+                border: none;
+                background-color: transparent;
+                font-size: large;
+            }
+            input[type=button]{
+            cursor: pointer;
+            }
+        </style>
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <div class="container">
+            <!-- cancel button -->
+            <input type="button" value="Cancel" class="cancel" id="cancelButton" />
+
+            <!-- done button -->
+            <input type="submit" value="Done" class="done cursor-pointer" id="doneButton" />
+            <h2 class="new">Update Contact</h2><br>
+            <br>      
+
+            <!-- add values -->
+            <input type="text" placeholder="Name*" id="nameValue" required /><br><br>
+            <input type="text" placeholder="Phone*" id="phoneValue" required /><br><br>
+            <input type="text" placeholder="Email*" id="mailValue" required /><br><br>
+            <input type="text" placeholder="Groups" style="margin-bottom: 35px;" />      
+        </div>
+        <script src="index.js"></script>
+        <script src="updateContacts.js"></script>
+    </body>
+</html>

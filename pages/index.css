@@ -1,0 +1,8 @@
+/* This page is used only by addContancts */
+.centered {
+    margin-left: -50px;
+}
+
+.cursor-pointer {
+    cursor: pointer; /* Set cursor to pointer */
+}
