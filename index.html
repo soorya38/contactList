@@ -11,6 +11,12 @@
                 background-color:#787878;
                 color:white;
             }
+            .search-results {
+                height: 500px;
+                width: 300px;
+                background-color: white;
+            }
+            
             .container{
                 border-bottom:5px solid #0a66c2;
                 margin-top: 20px;
@@ -27,16 +33,18 @@
                 scroll-margin-top:15px ;
             }
             .H1{
-                margin-left: 15px;
+                margin-left: 10px;
                 text-align: center;
-                padding-left: 18px;
-                padding-top: 5px;
+                font-size: 25px;
+                
             }
             .H1border{
                 border:1px solid white;
                 border-radius: 50%;
-                width: 40px;
-                height: 43px;
+                padding: 10px;
+                max-height: 30px;
+                max-width: 20px;
+                
             }
             .contact-container {
                 margin-left: 30px;
@@ -244,31 +252,24 @@
                 display: block;
                 transition-duration: 0.5ms; 
             }
-
+            
+            
         </style>
     </head>
     <body id="body">
         <div class="container" id="container">
 
-            <!-- search bar -->
             <div class="search-container">
                 <!-- add button -->
                 <button class="addsymbol" id="addButton">+</button>
                 <input type="search" class="search" placeholder="Search" id="search">
             </div>
-
-            
-            <div class="contact-container1">
-                <h1 class="H1 H1border">B<span class="contact-info">Buvanesh</span></h1>
-                <button class="fa fa-phone call1"></button> 
-                <button type="button" class="fa fa-comments message"></button>
-                <button type="button" class="fa fa-video-camera video"></button>  
-                <button type="button" class="fa fa-info-circle info" id="updateButton"></button> 
-            </div>
+                   
             <div id="contactList">
                 
             </div>
         </div>
+        
     </body>
     <script src="pages/index.js"></script>
     <script src="pages/addContact.js"></script>

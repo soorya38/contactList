@@ -19,9 +19,6 @@ doneButton.addEventListener('click', () => {
 
         contacts.push(newContact);
         localStorage.setItem('contacts', JSON.stringify(contacts));
-
-        console.log(newContact);
-
         window.location.href = "../index.html";
     } else {
         alert('Please fill in all fields.');
