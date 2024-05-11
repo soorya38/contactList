@@ -6,6 +6,7 @@ let searchValue = document.getElementById('search');
 window.onload = () => {
     window.contacts = JSON.parse(localStorage.getItem('contacts')) || [];
 
+    // printContacts(window.contacts);
     for(let i=0; i<window.contacts.length; i++) {
         let test = window.contacts;
         test.sort((a, b) => {
@@ -114,7 +115,8 @@ const printContacts = (contactValues) => {
         });
 
         b3.addEventListener('click', () => {
-            window.location.href = "pages/deleteContacts.html?index=" + i;
+            let indexInOriginal = window.contacts.indexOf(contactValues[i]);
+            window.location.href = "pages/deleteContacts.html?index=" + indexInOriginal;
         });
     }
 }
