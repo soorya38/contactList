@@ -1,1 +1,1 @@
-www.soorya38.github.io/contactList
+soorya38.github.io/contactList
