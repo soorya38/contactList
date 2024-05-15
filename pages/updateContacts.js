@@ -1,4 +1,5 @@
 let doneButton = document.getElementById('doneButton');
+let cancelButton = document.getElementById('cancelButton');
 
 window.contacts = JSON.parse(localStorage.getItem('contacts')) || [];
 
@@ -17,6 +18,10 @@ let mailValue = document.getElementById('mailValue');
 nameValue.value = window.contacts[index].name;
 phoneValue.value = window.contacts[index].phone;
 mailValue.value = window.contacts[index].mail;
+
+cancelButton.addEventListener('click', () => {
+    window.location.href = "../index.html";
+});
 
 doneButton.addEventListener('click', () => {
     let newNameValue = nameValue.value;
