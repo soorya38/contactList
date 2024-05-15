@@ -66,7 +66,7 @@ search.addEventListener('input', () => {
     let contactValues = [];
 
     for (let i = 0; i < window.contacts.length; i++) {
-        if (window.contacts[i].name.toLowerCase().match(search.value.toLowerCase())) {
+        if (window.contacts[i].name.match(search.value)) {
             contactValues.push(window.contacts[i]);
         }
     }
@@ -80,7 +80,7 @@ const printContacts = (contactValues) => {
     for (let i = 0; i < contactValues.length; i++) {
         let div = document.createElement('div');
         div.setAttribute('class', 'contact-container1');
-        // div.style.backgroundColor = "grey";
+        div.style.backgroundColor = "grey";
         let h2 = document.createElement('h2');
         let span = document.createElement('span');
         span.setAttribute('class', 'contact-info');
