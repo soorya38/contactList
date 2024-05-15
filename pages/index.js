@@ -111,7 +111,8 @@ const printContacts = (contactValues) => {
         div.appendChild(b4);
 
         b4.addEventListener('click', () => {
-            window.location.href = "pages/updatecontacts.html?index=" + i;
+            let indexInOriginal = window.contacts.indexOf(contactValues[i]);
+            window.location.href = "pages/updatecontacts.html?index=" + indexInOriginal;
         });
 
         b3.addEventListener('click', () => {
