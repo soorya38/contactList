@@ -1,4 +1,4 @@
-Contact clonse : https://soorya38.github.io/contactList
+<strong>Contact clone</strong> : https://soorya38.github.io/contactList
 
 <strong>Features:</strong>
 
